@@ -358,7 +358,11 @@ input[type=checkbox] {
     .menu li+li {
         margin-top: 12px;
     }
-
+	
+ .search-input {
+        margin-bottom: 0.5rem;
+    }
+    
     .search-box {
         margin-bottom: 1rem;
     }
