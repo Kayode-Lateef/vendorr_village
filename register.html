@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register | Vendor Village</title>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/vendor_village_favicon.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <header>
+
+    
+        <div class="navbar">
+
+        <!-- LOGO -->
+          <div class="logo">
+            <a href="index.html">
+                <img src="./images/vendor_village_blue_logo.svg" width="400" height="170" alt="logo">
+            </a>
+          </div>
+      
+          <!-- NAVIGATION MENU -->
+          <nav class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
+
+            <!-- NAVIGATION MENUS -->
+            <ul class="menu">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">
+                        <a href="/">Search</a>
+                    </button>
+
+                </div>
+                
+                
+
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+        
+                <li class="our-vendors">
+                  <a href="our-vendors.html">Our Vendors</a>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="btn" href="register.html">Join as a vendor</a></li>
+
+
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+      <!-- MAIN START -->
+      <main id="registerPage">
+        <div class="form-intro">
+
+            <img src="images/vendor_village_blue_logo.png" width="400" height="170" alt="our logo">
+            <div>
+                <h1 style="font-size: 30px;">Register with Vendor Village and</h1>
+                <p>Get local jobs from both local and the international community, Grow your business.</p>
+            </div>
+        </div>
+
+        <form id="register-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
+            <div>
+        
+                <label for="vendor_name">Business name/Full name:</label> <br>
+                <input type="text" name="vendor_name" id="vendor_name" required>
+            </div>
+            <div>
+             
+                <label for="vendor_email">Email:</label> <br>
+                <input type="email" name="vendor_email" id="vendor_email" required>
+            </div>
+            <div>
+                <label for="vendor_phone">Phone Number:</label> <br>
+                <input type="number" name="vendor_phone" id="vendor_phone" min="1" required>
+
+            </div>
+            <div>
+          <label for="vendor_services">Which service are you providing?</label> 
+                <select name="vendor_services" id="vendor_services">
+                    <option selected value="" disabled>Select Services</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Decoration">Decoration</option>
+                    <option value="Cake Design">Cake Design</option>
+                    <option value="Venue">Venue</option>
+                    <option value="Makeup Art">Makeup Art</option>
+                    <option value="Bridal Gown">Bridal Gown</option>
+                    <option value="Hair dressing">Hair dressing</option>
+                    <option value="DJ">DJ</option>
+                </select>
+            </div>
+
+            <div>
+            <label for="vendor_location">Location</label> <br>
+                <select name="vendor_location" id="vendor_location">
+                    <option selected value="" disabled>Select City</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Abuja">Abuja</option>
+                    <option value="Benin">Benin</option>
+                </select>
+            </div>
+            <div>
+
+                <label for="vendor_bio">Bio:</label> <br>
+                <textarea name="vendor_bio" id="vendor_bio" required cols="50" rows="5"></textarea>
+            </div>
+            <div>
+
+                <label for="vendor_address">Address:</label> <br>
+                <textarea name="vendor_address" id="vendor_address" required cols="30" rows="2"></textarea>
+            </div>
+
+            <div>
+
+                <label for="vendor_profile">Profile Picture:</label> <br>
+                <input type="file" name="vendor_profile" id="vendor_profile" required>
+            </div>
+            <!-- <div>
+                <label for="vendor_portfolio_image">Profile Picture:</label> <br>
+                <input type="file" name="vendor_portfolio_image" id="vendor_portfolio_image" required>
+
+            </div> -->
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+
+                <input type="checkbox" name="vendor_subscription" id="vendor_subscription" required>
+                <label for="vendor_subscription" style="font-size: 10px;">Yes, I'd like to receive email/SMS communications from Vendor Village.</label>
+
+            </div>
+            <div style="display: flex; align-items: center;">
+                <input type="checkbox" name="vendor_terms" id="vendor_terms" required>
+                <label for="vendor_terms" style="font-size: 10px;">I accept <a href="#" style="color: blue;">terms and conditions</a>, <a href="#" style="color: blue;">privacy policy</a> and <a href="#" style="color: blue;">cookie policy</a></label>
+            </div>
+          
+            <div>
+                <input type="reset" value="Cancel">
+                <input type="hidden" name="action" value="register_vendor">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        
+</main>
+<!-- MAIN END -->
+
+
+
+
+        <!-- FOOTER START -->
+<footer id="contact">
+    <div class="footer-sect">
+        <div>
+
+            <img src="images/vendor_village_blue_logo.svg" width="400" height="170" alt="our logo">
+            <h4>Find us on socials</h4>
+            <div>
+            
+                <img src="images/faceb.png" alt="facebook icon">
+                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/whatsapp.png" alt="WhatsApp icon">
+            </div>
+        </div>
+        <div class="our-address">
+            <address><span style="font-weight: bold;">Contact us@ </span>112 Allen Avenue road, Ikeja, Lagos,
+                Nigeria</address>
+
+                <ul>
+                    <li><a href="">Site map</a></li>
+                    <li><a href="">Accessibility statement</a></li>
+                    <li><a href="">Website privacy statement</a></li>
+                </ul>
+        </div>
+    </div>
+    <p class="copyright">Copyright&copy; Vendorvillage</p>
+</footer>
+<!-- FOOTER END -->
+      
+
+    <script src="carousel.js"></script>
+</body>
+</html>

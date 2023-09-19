@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Our Vendors | Vendor Village</title>
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="images/vendor_village_favicon.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+
+        <!-- LOGO -->
+          <div class="logo">
+            <a href="index.html">
+                <img src="./images/vendor_village_blue_logo.svg" width="400" height="170" alt="logo">
+            </a>
+          </div>
+      
+          <!-- NAVIGATION MENU -->
+          <nav class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
+
+            <!-- NAVIGATION MENUS -->
+            <ul class="menu">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                    <button class="search-btn">
+                        <a href="/">
+                            search
+                        </a>
+                    </button>
+
+                </div>
+                
+                
+
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+        
+                <li class="our-vendors">
+                  <a href="our-vendors.html">Our Vendors</a>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="btn" href="register.html">Join as a vendor</a></li>
+
+
+            </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- MAIN START -->
+<main id="ourVendorPage">
+    <div>
+        <h1>Find the best event vendor services for your event</h1>
+        <p>View their profile and hire them directly. No middleman!</p>
+    </div>
+
+    <div>
+        <form action="<?php echo esc_url(home_url('/search')); ?>" method="get">
+            <select name="vendor_services" required>
+                <option value="" selected disabled>Which service are you searching for?</option>
+                <option value="Photography">Photography</option>
+                <option value="Decoration">Decoration</option>
+                <option value="Cake Design">Cake Design</option>
+                <option value="Venue">Venue</option>
+                <option value="Makeup Art">Makeup Art</option>
+                <option value="Bridal Gown">Bridal Gown</option>
+                <option value="Hair dressing">Hair dressing</option>
+                <option value="DJ">DJ</option>
+            </select>
+            <select name="vendor_location" required>
+                <option value="" selected disabled>Which city</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Abuja">Abuja</option>
+                <option value="Benin">Benin</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div> 
+            <div>
+                <h2>Vendor Categories</h2>
+                <ul>
+                    <li>Photography</li>
+                    <li>Decoration</li>
+                    <li>Cake Design</li>
+                    <li>Venue</li>
+                    <li>Makeup Art</li>
+                    <li>Bridal Gown</li>
+                    <li>Hair dressing</li>
+                    <li>DJ</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <figure>
+                    <img src="/images/decorations.webp" alt="Decoration" width="500" height="500">
+                    <figcaption>Decoration</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/bridals.webp" alt="bridals" width="500" height="500">
+                    <figcaption>Bridals</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/cakes.webp" alt="Cake" width="500" height="500">
+                    <figcaption>Cake</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/makeup_artiste.webp" alt="Make up artiste" width="500" height="500">
+                    <figcaption>Make up artiste</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/Dj.webp" alt="DJ" width="500" height="500">
+                    <figcaption>DJ</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/photography.webp" alt="Photography" width="500" height="500">
+                    <figcaption>Photography</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/photography_2.webp" alt="Photography" width="500" height="500">
+                    <figcaption>Photography</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Traditional_hair_accessories.webp" alt="Traditional" width="500" height="500">
+                    <figcaption>Traditional</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/venue.webp" alt="Venue" width="500" height="500">
+                    <figcaption>Venue</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/wedding_hair.webp" alt="Wedding Hair" width="500" height="500">
+                    <figcaption>Wedding Hair</figcaption>
+                </figure>
+            </div>
+
+    </div>
+
+    <div>
+        <h2>Popular Vendors</h2>
+        <div>
+            <div class="popular-vendor-wrapper">
+                <img src="images/marrige-pix.png" alt="A woman getting married">
+                <div class="vendor-details">
+                    <div>
+                        <h3>TG Bakery</h3>
+                        <h5>Cake designer</h5>
+                        <h5>Lagos state</h5>
+                    </div> 
+                       <button class="btn">
+                        <a href="#"> View profile </a>
+                        </button>     
+                </div>
+             
+            </div>
+
+            <div class="popular-vendor-wrapper">
+                <img src="images/marrige-pix.png" alt="A woman getting married">
+                <div class="vendor-details">
+                    <div>
+                        <h3>TG Bakery</h3>
+                        <h5>Cake designer</h5>
+                        <h5>Lagos state</h5>
+                    </div> 
+                       <button class="btn">
+                        <a href="#"> View profile </a>
+                        </button>     
+                </div>
+             
+            </div>
+
+            <div class="popular-vendor-wrapper">
+                <img src="images/marrige-pix.png" alt="A woman getting married">
+                <div class="vendor-details">
+                    <div>
+                        <h3>TG Bakery</h3>
+                        <h5>Cake designer</h5>
+                        <h5>Lagos state</h5>
+                    </div> 
+                    <button class="btn">
+                        <a href="#"> View profile </a>
+                        </button>   
+                </div>
+             
+            </div>
+            
+           
+        </div>
+    </div>
+    <div id="eventOfTheWeek">
+        <h3>Event of the week</h3>
+        <div>
+            <img src="images/passport.png" alt="a passport of a traditional dressed lady">
+            <div>
+                <h4>Ivy and Ben love story</h4>
+                <p>
+                    The city of lagos was thrown into frenzy last weekend as popular billionaire
+                    and CEO of Devo music got married to his heathrob married to his heathrob
+                    married to his heathrobmarried to his heathrobmarried to his heathrob
+                    married to his heathrobmarried to his heathrob
+                    married to his heathrobmarried to his heathrob
+                </p>
+                    <button class="btn">Read more</button>
+              
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- MAIN END -->
+
+    
+    <!-- FOOTER START -->
+<footer id="contact">
+    <div class="footer-sect">
+        <div>
+
+            <img src="images/vendor_village_blue_logo.svg" width="400" height="170" alt="our logo">
+            <h4>Find us on socials</h4>
+            <div>
+            
+                <img src="images/faceb.png" alt="facebook icon">
+                <img src="images/instagram.png" alt="instagram icon">
+                <img src="images/whatsapp.png" alt="WhatsApp icon">
+            </div>
+        </div>
+        <div class="our-address">
+            <address><span style="font-weight: bold;">Contact us@ </span>112 Allen Avenue road, Ikeja, Lagos,
+                Nigeria</address>
+
+                <ul>
+                    <li><a href="">Site map</a></li>
+                    <li><a href="">Accessibility statement</a></li>
+                    <li><a href="">Website privacy statement</a></li>
+                </ul>
+        </div>
+    </div>
+    <p class="copyright">Copyright&copy; Vendorvillage</p>
+</footer>
+<!-- FOOTER END -->
+      
+
+    <script src="carousel.js"></script>
+</body>
+</html>
+
